@@ -1,20 +1,25 @@
-$(function(){
-	$("form").submit(function(e){
-		e.preventDefault();
-		var subdomain = $("input[name=subdomain]").val();
+/* global jQuery, createApp */
 
-		if(subdomain.length > 0) {
-			createApp(subdomain).then(onSuccess, onError);
+(function($){
+  'use strict';
 
-			onSuccess = function(){
-				alert('DONE! WHOOT!');
-			};
+  $('form[action=create]').on('submit',function(event){
+    event.preventDefault();
+    var $form = $(event.target);
+    var subdomain = $('input[name=subdomain]').val();
 
-			onError = function(){
-				alert('ERROR');
-			};
-		}
+    $form.addClass('loading');
+    createApp(subdomain).then(onSuccess, onError);
 
-		console.log(subdomain);
-	})
-})
+    function onSuccess(subdomain){
+      $form.removeClass('loading');
+      var $next = $('.current').removeClass('current').next().addClass('current');
+      $next.html( $next.html().replace(/subdomain/g, subdomain) );
+    }
+
+    function onError(error){
+      $form.removeClass('loading');
+      alert(error.message);
+    }
+  });
+})(jQuery);
