@@ -1,0 +1,41 @@
+/*-------------------------------
+@desc:   define font-family, -size, -color;
+
+--------------------------------*/
+input {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 150px;
+  color: #666;
+  background-color: inherit;
+}
+
+button {
+  border: 0px solid #2ecc71;
+  background-color: #2ecc71;
+  font-size: 1em;
+  cursor: pointer;
+  color: #fff;
+  padding: 6px 8px 7px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin-top: -2px;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+label {
+  width: 250px;
+  display: inline-block;
+}
+
+.desc input {
+  width: 312px;
+}
+
+.desc label, .desc input {
+  margin-top: 10px;
+}

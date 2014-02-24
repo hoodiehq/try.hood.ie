@@ -2,40 +2,40 @@
 <html>
 <head>
   <title>try.hood.ie</title>
-  <link rel="stylesheet" type="text/css" href="css/try.hoodie.css">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <img src="img/stripe.gif" id="stripe" />
+<header> 
+    <h1>try.hood.ie</h1>
+    <h2>create your app in a finger snap</h2>
+  </header>
 <div class="container">
-  <h1>try.hood.ie</h1>
-<!--
-  <aside>
-  		<!-- //step by step anzeige 
-  </aside>
--->
-
   <section class="current">
   		<form action="create">
-
-        <div class="input-group">
-          <input name="subdomain" required class="">
-          <span class="">.hoodieapp.com</span>
+        <div class="">
+          <input name="subdomain" required class="left" placeholder="your appname" />
+          <span class="left label">.hoodieapp.com</span>
         </div>
-
-  			<button type="submit" class="btn">create</button>
+  			<button type="submit" class="btn right hid">create me</button>
   		</form>
   </section>
 
-  <section>
+  <section class="desc">
   		<h2>Congratulations!</h2>
-  		<p>You're done, just copy &amp; paste the srcipt below into your app</p>
-  		<pre> &lt;script src="https://subdomain.hoodieapp.com/_api/_files/hoodie.js"&gt; &lt;/script&gt;</pre>
+  		<p>
+          You're done! <br />
+          Just copy &amp; paste the srcipt below into your app!
+  		  <pre> &lt;script src="https://subdomain.hoodieapp.com/_api/_files/hoodie.js"&gt; &lt;/script&gt;</pre>
+      </p>
 
-  		<p>You can manage your app here: <small>(this is for your eyes only)</small></p>
-  		<p><a href="https://subdomain-74893373298.hoodieapp.com" title="Pocket">https://subdomain-74893373298.hoodieapp.com</a></p>
+  		<p>
+        You can manage your app here: <small>(this is for your eyes only)</small> <br />
+        <a href="https://subdomain-74893373298.hoodieapp.com" title="Pocket">https://subdomain-74893373298.hoodieapp.com</a>
+      </p>
 
-
+      <h2 class="last">Instructions per mail?</h2>
       <p>
         <label>Send me these instructions to</label><input type="email" class="form-control" placeholder="joe@example.com" /> <br />
         <label>What's your name?  </label><input type="email" class="form-control" placeholder="Joe"/><br />

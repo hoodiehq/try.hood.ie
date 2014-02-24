@@ -1,0 +1,61 @@
+/*-------------------------------
+@desc:   define font-family, -size, -color;
+
+--------------------------------*/
+body, input {
+	color: #999;
+	font-weight: 300;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 5em;
+  color: #444;
+  text-align: center;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+.label {
+	line-height: 1.5em;
+	color: #999;
+	font-size: 1.1em;
+}
+
+h2, section {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-weight: 300;
+}
+
+button {
+	line-height: 1.1em;
+}
+
+.desc {
+	text-align: left;
+	line-height: 1.6em;
+}
+
+.desc h2 {
+	font-weight: 700;
+	color: #666;
+	text-align: left;
+	font-family: 'Roboto Slab', serif;
+}
+
+pre {
+	color: #fff;
+}
+
+small {
+	font-size: 0.7em;
+}
+
+.desc a {
+	color: #2ecc71;
+}
