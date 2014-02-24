@@ -78,6 +78,7 @@ body {
  	float: right;
  }
 
- .hide {
- 	display: none;
- }
+ .hide,
+ .current ~ section {
+  display: none;
+}
