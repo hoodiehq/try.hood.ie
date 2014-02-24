@@ -63,3 +63,7 @@ form.loading:after {
   left: 0;
   background: rgba(255,255,255,0.3)
 }
+
+form.loading {
+  opacity: 0.4;
+}
