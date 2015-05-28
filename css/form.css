@@ -2,6 +2,11 @@
 @desc:   define font-family, -size, -color;
 
 --------------------------------*/
+b {
+  position: absolute;
+  left: -999em;
+}
+
 input {
   border: 0;
   border-bottom: 1px solid #ccc;
