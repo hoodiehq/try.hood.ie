@@ -15,6 +15,7 @@
       $form.removeClass('loading');
       var $next = $('.current').removeClass('current').next().addClass('current');
       $next.html( $next.html().replace(/subdomain/g, subdomain) );
+      $('#congratulations').focus();
     }
 
     function onError(error){

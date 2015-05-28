@@ -67,6 +67,10 @@ body {
 		margin-left: -2px;
 	}
 
+#congratulations {
+	outline: none;
+}
+
  /* --- heleper --- */
  .left {
  	margin-right: 7px;
