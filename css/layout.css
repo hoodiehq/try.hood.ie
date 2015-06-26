@@ -67,7 +67,11 @@ body {
 		margin-left: -2px;
 	}
 
- /* --- heleper --- */
+#congratulations {
+	outline: none;
+}
+
+ /* --- helper --- */
  .left {
  	margin-right: 7px;
  	float: left;
